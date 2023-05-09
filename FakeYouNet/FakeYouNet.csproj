@@ -4,7 +4,29 @@
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <Copyright>@Luis Llamas 2023</Copyright>
+    <Title>FakeYouNet</Title>
+    <Company></Company>
+    <Authors>Luis Llamas</Authors>
+    <PackageProjectUrl>https://github.com/luisllamasbinaburo/FakeYouNet</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/luisllamasbinaburo/FakeYouNet</RepositoryUrl>
+    <PackageReleaseNotes>First release</PackageReleaseNotes>
+    <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+    <Description>A .NET library for interacting with the FakeYou API easily</Description>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\LICENSE.txt">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Mapster" Version="7.3.0" />
