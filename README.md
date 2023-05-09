@@ -2,6 +2,16 @@
 
 FakeYouNet is .NET library that allows you to interact with the FakeYouAPI easily.
 
+Made in NET6, compatible with Windows, Linux, Android and macOS.
+
+## Instalation
+
+FakeYouNet is available in a Nuget Packet.
+
+```bash
+Install-Package FakeYouNet
+```
+
 ## Examples
 
 ### Search voices
