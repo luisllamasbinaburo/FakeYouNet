@@ -103,7 +103,7 @@ namespace FakeYouNet
             var voice = Voices.FirstOrDefault(x => x.model_token.Contains(token, StringComparison.InvariantCultureIgnoreCase));
             if (voice == null) await RefreshCache();
 
-            return Voices.FirstOrDefault(x => x.title.Contains(token, StringComparison.InvariantCultureIgnoreCase));
+            return Voices.FirstOrDefault(x => x.model_token.Contains(token, StringComparison.InvariantCultureIgnoreCase));
         }
 
         public async Task<byte[]> MakeTTS(VoiceModel voice, string text, int timeout = 60)
